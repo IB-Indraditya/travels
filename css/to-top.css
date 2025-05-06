@@ -1,0 +1,36 @@
+#back-to-top {
+    position: fixed;
+    bottom:4vw;
+    right:18vw;
+    z-index: 99999;
+	height:auto;
+    cursor: pointer;
+    transition: opacity 0.2s ease-out;
+    opacity:0;
+}
+#back-to-top:hover {
+opacity:0;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+
+#back-to-top img {
+float:left;width:100%;height:100%;
+}
+@media (min-width: 768px) and (max-width: 899px) {
+#back-to-top {
+right:0vw;
+}
+#back-to-top img {
+width: 80%;
+}
+}
+@media (min-width: 320px) and (max-width: 767px) {
+#back-to-top {
+right:1vw;
+}
+#back-to-top img {
+width: 60%;
+}
+}
